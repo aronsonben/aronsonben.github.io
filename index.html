@@ -1,96 +1,128 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ben Aronson</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ben Aronson · Software Engineer</title>
+    <meta name="description" content="Portfolio for Ben Aronson, software engineer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site">
+      <header class="hero" id="top">
+        <div class="hero-media" aria-hidden="true">
+          <div class="avatar" role="img" aria-label="Stylized portrait">BA</div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer · Thinker · Dreamer</p>
+          <h1>Ben Aronson</h1>
+          <p class="location">Boston, MA · Remote-friendly</p>
+          <p class="intro">
+            I build software platforms and form cross-disciplinary connections.
+          </p>
+          <div class="hero-links">
+            <a class="pill" href="#projects">View projects</a>
+            <a class="pill pill--outline" href="#contact">Contact me</a>
+          </div>
+        </div>
+      </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <section class="projects" id="projects">
+        <div class="section-heading">
+          <h2>Selected Work</h2>
+          <p>Recent experiments in dependable systems and thoughtful UI.</p>
+        </div>
+        <ul class="project-grid">
+          <li class="project-card">
+            <div class="project-meta">
+              <span class="project-label">Go · Edge Infra</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Signal Relay</h3>
+            <p>
+              Lightweight deployment plane that keeps feature flags and rollout telemetry in sync across
+              tens of services with &lt; 200ms end-to-end latency.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/aronsonben" target="_blank" rel="noreferrer">Repo</a>
+              <a href="https://www.notion.so/" target="_blank" rel="noreferrer">Case study</a>
+            </div>
+          </li>
+          <li class="project-card">
+            <div class="project-meta">
+              <span class="project-label">TypeScript · AI UX</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3>Workshop Canvas</h3>
+            <p>
+              Collaborative retro board with on-device embeddings so teams keep notes private while still
+              enjoying meaningful semantic search.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/aronsonben" target="_blank" rel="noreferrer">Repo</a>
+              <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Prototype</a>
+            </div>
+          </li>
+          <li class="project-card">
+            <div class="project-meta">
+              <span class="project-label">Python · Data Viz</span>
+              <span class="project-year">2023</span>
+            </div>
+            <h3>Range Atlas</h3>
+            <p>
+              Narrative dashboards that let conservation groups simulate funding scenarios and instantly
+              preview the impact on migratory corridors.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/aronsonben" target="_blank" rel="noreferrer">Repo</a>
+              <a href="https://medium.com/" target="_blank" rel="noreferrer">Write-up</a>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/headshot_crop.jpg" alt="" width="200px"/></span>
-							<h1>Ben Aronson</h1>
-							<p>Software Developer</p>
-						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
-							<ul class="icons">
-								<li><a href="https://github.com/aronsonben" class="fa-github">GitHub</a></li>
-								<li><a href="https://www.linkedin.com/in/benjamin-aronson-4b70aab5/" class="fa-linkedin">LinkedIn</a></li>
-								<!--<li><a href="assets/BenAronson-CSresume-Sp18v03.1.pdf" class="fa-file-text-o">Resume</a></li>-->
-							</ul>
-							<a href="assets/BenAronson_Resume_Spring2020.pdf" class="button">Resume</a>
-						</footer>
-					</section>
+      <section class="contact" id="contact">
+        <div class="section-heading">
+          <h2>Connect</h2>
+          <p>Always happy to chat about systems, mentoring, or hiking trails.</p>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:hello@aronsonben.com" class="contact-link">
+              <span>Email</span>
+              <span>hello@aronsonben.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/aronsonben" target="_blank" rel="noreferrer" class="contact-link">
+              <span>LinkedIn</span>
+              <span>linkedin.com/in/aronsonben</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/aronsonben" target="_blank" rel="noreferrer" class="contact-link">
+              <span>GitHub</span>
+              <span>github.com/aronsonben</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Ben Aronson</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+    <footer class="site-footer">
+      <small>&copy; <span id="year">2025</span> Benito Aronson. Built with HTML &amp; CSS.</small>
+    </footer>
+    <script>
+      const yearEl = document.getElementById('year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
 </html>
